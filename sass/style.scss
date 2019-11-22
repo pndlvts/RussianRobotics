@@ -1,4 +1,3 @@
-$fontBlack: #f9f;
-body{
-    color: $fontBlack
-}
+@import "base/base";
+@import "../fonts/icons/style.css";
+@import "blocks/header";

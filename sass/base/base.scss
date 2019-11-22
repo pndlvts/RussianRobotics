@@ -1,0 +1,32 @@
+//Серая палитра(растяжка)
+$gray-darken-5: #8890A1;
+$gray-darken-4: rgba(136, 144, 161, 0.5);
+$gray-darken-3: rgba(136, 144, 161, 0.3);
+$gray-darken-2: rgba(136, 144, 161, 0.2);
+$gray-darken-1: rgba(136, 144, 161, 0.1);
+//Основная палитра
+$gray-lighten: #F4F4F6;
+$black: #000;
+$white: #fff;
+$deep-blue: #003DB1;
+$orange: #FF5D39;
+//Шрифты
+@font-face{
+    font-family: G-medium;
+    src: url(../fonts/G-medium.ttf)
+}
+@font-face{
+    font-family: G-regular;
+    src: url(../fonts/G-regular.otf)
+}
+@font-face{
+    font-family: G-bold;
+    src: url("../fonts/G-bold.otf")
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}

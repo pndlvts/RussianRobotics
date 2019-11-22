@@ -3,13 +3,13 @@ var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 
 gulp.task("sass", function () {
-    return gulp.src("sass/**/*.scss")
-    .pipe(sass().on("error", sass.logError))
+    return gulp.src("sass/*.scss")
+    .pipe(sass({outputStyle: 'compressed'}).on("error", sass.logError))
     .pipe(gulp.dest("css/"));
 });
 
 gulp.task("pug", function () {
-    return  gulp.src("pug/**/*.pug")
+    return  gulp.src("pug/*.pug")
     .pipe(pug({pretty: false}))
     .pipe(gulp.dest("./"));
     
