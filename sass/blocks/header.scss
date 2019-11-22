@@ -18,7 +18,8 @@
         }
 
         .header__left-text {
-            padding-top: 8px;
+            letter-spacing: 0.05em;
+            padding-top: 25px;
             text-transform: uppercase;
             font-family: G-regular;
             font-size: 12px;
@@ -40,14 +41,15 @@
         }
 
         .header__tel {
-            padding-top: 8px;
+            padding-top: 25px;
             margin-right: 375px;
             font-family: G-medium;
             font-weight: 500;
             font-size: 12px;
             line-height: 12px;
             white-space: nowrap;
-
+            letter-spacing: 0.05em;
+            margin-left: 20px;
             a {
                 text-decoration: none;
                 color: $orange;
@@ -56,13 +58,12 @@
 
 
         .header__look {
-            padding-top: 8px;
-            padding-right: 21px;
-            padding-left: 21px;
+            display: none;
         }
 
         .header__right-text {
-            padding-top: 8px;
+            letter-spacing: 0.05em;
+            padding-top: 25px;
 
             a {
                 text-decoration: none;
@@ -80,12 +81,13 @@
     // ###############################
     @media screen and (max-width: 1500px) {
         .header__logo {
-            margin-right: 51px;
+            margin-right: 40px;
             margin-left: 63px;
         }
 
         .header__left-text {
-            padding-top: 8px;
+            letter-spacing: 0.05em;
+            padding-top: 30px;
             text-transform: uppercase;
             font-family: G-regular;
             font-size: 12px;
@@ -107,7 +109,7 @@
         }
 
         .header__tel {
-            padding-top: 8px;
+            padding-top: 30px;
             margin-right: 63px;
             font-family: G-medium;
             font-weight: 500;
@@ -122,13 +124,15 @@
         }
 
         .header__look {
-            padding-top: 8px;
+            padding-top: 30px;
             padding-right: 21px;
             padding-left: 21px;
         }
 
         .header__right-text {
-            padding-top: 8px;
+            margin-top: 30px;
+            letter-spacing: 0.05em;
+            padding-top: 0px;
 
             a {
                 text-decoration: none;
@@ -147,12 +151,13 @@
 
     @media screen and (max-width: 1024px) {
         .header__logo {
-            margin-right: 51px;
+            margin-right: 40px;
             margin-left: 63px;
         }
 
         .header__left-text {
-            padding-top: 0;
+            letter-spacing: 0.05em;
+            padding-top: 30px;
             text-transform: uppercase;
             font-family: G-regular;
             font-size: 12px;
@@ -174,13 +179,14 @@
         }
 
         .header__tel {
-            padding-top: 0px;
+            padding-top: 30px;
             margin-right: 63px;
             font-family: G-medium;
             font-weight: 500;
             font-size: 12px;
             line-height: 12px;
             white-space: nowrap;
+            letter-spacing: 0.05em;
 
             a {
                 text-decoration: none;
@@ -189,12 +195,14 @@
         }
 
         .header__look {
-            padding-top: 0px;
-            padding-right: 21px;
+            padding-top: 30px;
+            padding-right: 10px;
             padding-left: 21px;
         }
 
         .header__right-text {
+            margin-top: 30px;
+            letter-spacing: 0.05em;
             padding-top: 0px;
 
             a {
@@ -224,14 +232,15 @@
         }
 
         .header__toggler {
+            margin-top: 10px;
             display: block;
             margin-right: 93px;
             padding-left: 20px
         }
 
         .header__search {
+            margin-top: 10px;
             display: block;
-            padding-left: 20px
         }
 
         .header__logo {
@@ -239,16 +248,18 @@
         }
 
         .header__look {
+            margin-top: 10px;
             display: block;
             padding-left: 35px
         }
 
         .header__right-text {
-
+            padding-right: 5px;
+            letter-spacing: 0.05em;
+            margin-top: 10px;
             text-transform: uppercase;
             font-family: G-regular;
             font-size: 12px;
-            padding-left: 25px;
             white-space: nowrap;
 
             a {
