@@ -195,9 +195,10 @@
         }
 
         .header__look {
+            display: block;
             padding-top: 30px;
-            padding-right: 10px;
-            padding-left: 21px;
+            padding-right: 0px;
+            padding-left: 15px;
         }
 
         .header__right-text {
@@ -213,7 +214,7 @@
             text-transform: uppercase;
             font-family: G-regular;
             font-size: 12px;
-            padding-left: 25px;
+            padding-left: 20px;
             white-space: nowrap
         }
     }
@@ -248,9 +249,11 @@
         }
 
         .header__look {
+            padding-top: 0;
             margin-top: 10px;
             display: block;
-            padding-left: 35px
+            padding-left: 35px;
+            padding-right: 25px
         }
 
         .header__right-text {
