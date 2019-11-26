@@ -10,7 +10,7 @@ gulp.task("sass", function () {
 
 gulp.task("pug", function () {
     return  gulp.src("pug/*.pug")
-    .pipe(pug({pretty: false}))
+    .pipe(pug({pretty: true}))
     .pipe(gulp.dest("./"));
     
 });
