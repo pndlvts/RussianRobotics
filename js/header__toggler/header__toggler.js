@@ -1,4 +1,4 @@
-$("#icon-menu").click(function(e) {
-  e.preventDefault();
-  $(".header__menu").toggleClass('header__menu_show');
+document.querySelector("#icon-menu").addEventListener("click", (e) => {
+var box = document.querySelector(".header__menu");
+box.classList.toggle("header__menu_show");
 })
