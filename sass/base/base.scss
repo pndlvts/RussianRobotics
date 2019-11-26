@@ -10,23 +10,46 @@ $black: #000;
 $white: #fff;
 $deep-blue: #003DB1;
 $orange: #FF5D39;
+
 //Шрифты
-@font-face{
+@font-face {
     font-family: G-medium;
     src: url(../fonts/G-medium.ttf)
 }
-@font-face{
+
+@font-face {
     font-family: G-regular;
     src: url(../fonts/G-regular.otf)
 }
-@font-face{
+
+@font-face {
     font-family: G-bold;
     src: url("../fonts/G-bold.otf")
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background: black;
+}
+
+@media screen and (max-width: 320px) {
+    .btn {
+        height: 45px;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    text-decoration: none;
+    user-select: none;
+    background: $deep-blue;
+    outline: none;
+    text-align: center;
 }
