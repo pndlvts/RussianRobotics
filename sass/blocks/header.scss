@@ -96,7 +96,7 @@
         }
     }
 
-    ul.for-person-list {
+    ul.header__for-person-list {
         list-style: none;
         background: $white;
         justify-content: center;
@@ -107,7 +107,7 @@
         -webkit-column-count: 2;
         column-count: 2;
 
-        li.for-person-list-item {
+        li.header__for-person-list-item {
             padding-top: 30px;
 
             a {
@@ -272,5 +272,8 @@
             transform: rotate(180deg);
             transition: 0.5s;
         }
+    }
+    .header__for-person-block{
+        display: none;
     }
 }
