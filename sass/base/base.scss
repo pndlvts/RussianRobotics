@@ -14,17 +14,20 @@ $orange: #FF5D39;
 //Шрифты
 @font-face {
     font-family: G-medium;
-    src: url(../fonts/G-medium.ttf)
+    src: url(../fonts/G-medium.ttf);
+    font-style: normal;
 }
 
 @font-face {
     font-family: G-regular;
-    src: url(../fonts/G-regular.otf)
+    src: url(../fonts/G-regular.otf);
+    font-style: normal;
 }
 
 @font-face {
     font-family: G-bold;
-    src: url("../fonts/G-bold.otf")
+    src: url("../fonts/G-bold.otf");
+    font-style: normal;
 }
 
 * {
@@ -36,6 +39,11 @@ body {
     background: black;
 }
 
+@media screen and (max-width: 1024px) {
+        .btn {
+    height: 70px;
+    }
+}
 @media screen and (max-width: 768px) {
     .btn {
         height: 45px;
