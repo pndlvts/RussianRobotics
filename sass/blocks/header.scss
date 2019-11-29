@@ -14,7 +14,7 @@
 }
 
 //768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .header__mobile-menu {
         display: none;
     }
@@ -165,13 +165,10 @@
 
         .header__about-bank-container {
             margin-top: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: block;
 
             .header__title-about {
-                display: flex;
-                flex-basis: 100%;
+                display: block;
                 border-top: 1px solid $gray-darken-2;
                 border-bottom: 1px solid $gray-darken-2;
                 margin-left: 90px;
@@ -179,42 +176,97 @@
                 padding-top: 25px;
                 padding-bottom: 25px;
                 margin-bottom: 266px;
-                justify-content: space-between;
-                font-size: 18px;
+
+                a {
+                    font-family: G-medium;
+                    font-size: 18px;
+                    color: $black;
+                }
+                a.header__about-bank-drop{
+                    display: flex;
+                }
+                a.header__about-bank-drop:after {
+                    font-family: iconsRR;
+                    font-size: 7px;
+                    margin-top: 0px;
+                    position: absolute;
+                    right: 90px;
+                    content: "\e924";
+                    color: $black;
+                    transition: 0.5s;
+                }
+                a.header__about-bank-drop_active:after {
+                    font-family: iconsRR;
+                    font-size: 7px;
+                    margin-top: 0px;
+                    position: absolute;
+                    right: 90px;
+                    content: "\e924";
+                    color: $black;
+                    transition: 0.5s;
+                    transform: rotate(180deg);
+                }
+
+                .header__about-bank-list {
+                    display: none;
+                    margin-top: 26px;
+                    list-style: none;
+                    column-gap: 30px;
+                    -moz-column-count: 2;
+                    -webkit-column-count: 2;
+                    column-count: 2;
+
+                    li {
+                        line-height: 40px;
+                    }
 
                     a {
-                        color: $black;
-                        font-family: G-medium;
-                        display: flex;
-                        flex-basis: 100%;
+                        color: $gray-darken-5;
+                        font-family: G-regular;
+                    }
                 }
-                        i::after {
-                            font-family: iconsRR;
-                            font-size: 7px;
-                            content: "\e924";
-                            color: $black;
-                            transition: 0.5s;
-                            font-style: normal;
-                        }
-                    
-                
+                .header__about-bank-list_show{
+                    display: block;
+                }
+            }
+        }
 
+        .header__contacts {
+            margin-top: 146px;
+            margin-left: 90px;
+            margin-right: 90px;
+            padding-bottom: 42px;
+            display: flex;
+            justify-content: space-between;
+            font-family: G-medium;
 
+            .private {
+
+                a {
+                    color: $black;
+                }
+            }
+
+            .tel {
+                a {
+                    color: $orange;
+                }
             }
         }
     }
-
-    .header__for-person-block_show {
-        display: block;
-    }
-
-    .header__for-person_active {
-        color: $deep-blue !important;
-    }
 }
 
+.header__for-person-block_show {
+    display: block;
+}
+
+.header__for-person_active {
+    color: $deep-blue !important;
+}
+
+
 //320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .header__mobile-menu {
         display: block;
     }

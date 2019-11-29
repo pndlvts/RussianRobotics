@@ -117,14 +117,27 @@ header.header
                 img(src="media/top4.png" alt="Войти в личный каинет" title="Войти в личный кабинет")
         .header__signIn
             .header__signIn-text Интернет-банк для частных лиц
-            a.btn Войти в личный кабинет
+            a(href="#!").btn Войти в личный кабинет
     .header__about-bank-container
-        .header__title-about
-            a(href="#!") О банке
-            i
-            
-    
-                
-                    
-            
+        .header__title-about 
+            a(href="#!").header__about-bank-drop#header__about-bank_tablet О банке
+            ul.header__about-bank-list
+                li
+                    a(href="#!") Для юридических лиц
+                li
+                    a(href="#!") Резервный канал
+                li
+                    a(href="#!") Для частных клиентов
+                li
+                    a(href="#!") Личный кабинет инвестора
+                li
+                    a(href="#!") Перевод с карты на карту
+                li
+                    a(href="#!") Samsung Pay
+    .header__contacts
+        .private 
+            a(href="#!") Private banking
+        .tel
+            a(href="tel:84959568626") +7 495 956 86 26
+           
         
