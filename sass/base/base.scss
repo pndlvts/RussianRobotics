@@ -38,26 +38,4 @@ $orange: #FF5D39;
 body {
     background: black;
 }
-
-@media screen and (max-width: 1023px) {
-        .btn {
-    height: 70px;
-    }
-}
-@media screen and (max-width: 767px) {
-    .btn {
-        height: 45px;
-    }
-}
 a{text-decoration: none}
-.btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $white !important;
-    text-decoration: none;
-    user-select: none;
-    background: $deep-blue;
-    outline: none;
-    text-align: center;
-}

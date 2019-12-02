@@ -1,5 +1,10 @@
 header.header
-    .header__logo B
+    .header__left-text
+        .header__logo B
+        .header__banking_desktop 
+            a(href="#!") Private banking
+        .header__about-bank_desktop 
+            a(href="#!") О банке
     .header__right-icons
         .office
             a(href="#!") Офисы и банкоматы
@@ -9,6 +14,7 @@ header.header
             span.icon-Look
         span.icon-Search
         span.icon-menu#icon-menu
+        a(href="tel:84959568626").header__tel-desktop +7 495 956 86 26
 .header__mobile-menu
     ul.header__menu
         li.header__main-item#for-person
@@ -94,30 +100,31 @@ header.header
         li.header__main-header-menu-item
             a(href="#!") Услуги на ранке ценных бумаг
     .header__for-person-block
-        ul.header__for-person-list
-            li.header__for-person-list-item
-                a(href="#!") Платежный сервис
-            li.header__for-person-list-item
-                a(href="#!") Монeты
-            li.header__for-person-list-item
-                a(href="#!") Вклады
-            li.header__for-person-list-item
-                a(href="#!") Банковские карты
-            li.header__for-person-list-item
-                a(href="#!") Кредитование физических лиц
-            li.header__for-person-list-item
-                a(href="#!") Операции с наличной иностранной валютой
-            li.header__for-person-list-item
-                a(href="#!") Тарифы
-            li.header__for-person-list-item
-                a(href="#!") Текущие счета
-        .header__signIn-container
-            .header__signInimage
-                .header__top-img
-                    img(src="media/top4.png" alt="Войти в личный каинет" title="Войти в личный кабинет")
-            .header__signIn
-                .header__signIn-text Интернет-банк для частных лиц
-                a(href="#!").btn Войти в личный кабинет
+        .header__inline
+            ul.header__for-person-list
+                li.header__for-person-list-item
+                    a(href="#!") Платежный сервис
+                li.header__for-person-list-item
+                    a(href="#!") Монeты
+                li.header__for-person-list-item
+                    a(href="#!") Вклады
+                li.header__for-person-list-item
+                    a(href="#!") Банковские карты
+                li.header__for-person-list-item
+                    a(href="#!") Кредитование физических лиц
+                li.header__for-person-list-item
+                    a(href="#!") Операции с наличной иностранной валютой
+                li.header__for-person-list-item
+                    a(href="#!") Тарифы
+                li.header__for-person-list-item
+                    a(href="#!") Текущие счета
+            .header__signIn-container
+                .header__signInimage
+                    .header__top-img
+                        img(src="media/top4.png" alt="Войти в личный каинет" title="Войти в личный кабинет")
+                .header__signIn
+                    .header__signIn-text Интернет-банк для частных лиц
+                    a(href="#!").btn Войти в личный кабинет
         .header__about-bank-container
             .header__title-about 
                 a(href="#!").header__about-bank-drop#header__about-bank_tablet О банке
