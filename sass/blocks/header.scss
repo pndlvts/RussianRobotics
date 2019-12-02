@@ -47,12 +47,12 @@
 
             .header__banking_desktop {
                 padding-left: 30px;
-                          padding-top: 25px;
+                padding-top: 25px;
             }
 
             .header__about-bank_desktop {
                 padding-left: 12px;
-                          padding-top: 25px;
+                padding-top: 25px;
             }
         }
 
@@ -127,7 +127,7 @@
             list-style: none;
             background: $white;
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             font-family: G-medium;
             font-size: 14px;
 
@@ -145,6 +145,14 @@
                 margin-bottom: 23px;
             }
         }
+        .header__main-header-menu-items{
+            display: flex;
+        }
+        .header__desktop-search{
+            padding-right: 65px;
+            display: flex;
+            align-items: center;
+        }
     }
 
     ul.header__for-person-list {
@@ -157,9 +165,11 @@
         -webkit-column-count: 2;
         column-count: 2;
         margin-right: 66px;
+        
         li.header__for-person-list-item {
             padding-top: 18px;
             display: flex;
+
             a {
                 color: $gray-darken-5;
                 font-size: 18px;
@@ -181,6 +191,7 @@
             display: block;
             margin-bottom: 35px;
             margin-right: 35px;
+
             .header__top-img {
                 height: 140px;
                 width: 279px;
@@ -200,6 +211,7 @@
                 font-family: G-medium;
                 font-size: 14px;
                 max-width: 279px;
+
                 .header__signIn-text {
                     line-height: 25px;
                     margin-bottom: 15px;
@@ -256,7 +268,7 @@
 
                 .header__about-bank-list {
                     display: inline-block;
-                    column-gap: 70px;
+                    column-gap: 75px;
                     margin-top: 0px;
                     list-style: none;
                     -moz-column-count: 2;
@@ -280,10 +292,11 @@
         }
 
         .header__contacts {
-            margin-top:1px;
+            margin-top: 1px;
             min-height: 1px;
+
             .private {
-display:  none;
+                display: none;
             }
 
             .tel {
@@ -382,6 +395,7 @@ display:  none;
             font-family: G-medium;
             font-size: 14px;
             padding-left: 35px;
+
             li:first-child {
                 margin-left: 0px;
 
@@ -396,6 +410,7 @@ display:  none;
                 margin-bottom: 30px;
                 margin-right: 35px;
             }
+            .header__desktop-search{display: none;}
         }
     }
 
@@ -420,10 +435,12 @@ display:  none;
         column-gap: 0px;
         margin-right: 90px;
         margin-top: 0px;
+
         li.header__for-person-list-item {
             padding-top: 22px;
-                    padding-left: 25px;
-             display: block;
+            padding-left: 25px;
+            display: block;
+
             a {
                 color: $gray-darken-5;
             }
@@ -442,13 +459,14 @@ display:  none;
         .header__signIn-container {
             display: flex;
             justify-content: center;
-            
+
             .header__top-img {
                 height: 140px;
                 width: 279px;
                 background-color: #CEDEEC;
                 margin-top: 90px;
                 margin-left: 50px;
+
                 img {
                     margin-top: -40px;
                     margin-left: 5px;
@@ -461,6 +479,7 @@ display:  none;
                 font-family: G-medium;
                 font-size: 18px;
                 margin-right: 18px;
+
                 .header__signIn-text {
                     width: 55%;
                     line-height: 25px;
@@ -473,6 +492,7 @@ display:  none;
             margin-top: 0px;
             display: block;
             margin-top: -30px;
+
             .header__title-about {
                 display: block;
                 border-top: 1px solid $gray-darken-2;
@@ -526,6 +546,7 @@ display:  none;
                     -moz-column-count: 2;
                     -webkit-column-count: 2;
                     column-count: 2;
+
                     li {
                         padding-top: 20px;
                     }
