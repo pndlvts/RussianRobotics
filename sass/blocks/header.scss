@@ -243,7 +243,7 @@
     }
 }
 //1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1919px) {
     .header__mobile-menu {
         display: none;
     }
@@ -663,12 +663,13 @@
         -moz-column-count: 2;
         -webkit-column-count: 2;
         column-count: 2;
-        column-gap: 0px;
+        column-gap: 30px;
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
         padding-left: 90px;
         padding-right: 90px;
+        margin-bottom: 10px;
         li.header__for-person-list-item {
             display: block;
             padding-top: 8px;
@@ -690,13 +691,12 @@
         .header__signIn-container {
             display: flex;
             justify-content: center;
-
             .header__top-img {
                 height: 140px;
                 width: 279px;
                 background-color: #CEDEEC;
                 margin-top: 75px;
-                margin-left: 50px;
+                margin-left: 20px;
 
                 img {
                     margin-top: -40px;
@@ -795,10 +795,11 @@
         }
 
         .header__contacts {
-            margin-top: 146px;
+            margin-top: 266px;
             margin-left: 90px;
             margin-right: 90px;
             padding-bottom: 42px;
+            font-size: 18px;
             display: flex;
             justify-content: space-between;
             font-family: G-medium;
