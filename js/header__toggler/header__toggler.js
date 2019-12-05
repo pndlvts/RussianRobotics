@@ -1,17 +1,17 @@
 //гамбергер
 document.querySelector("#icon-menu").addEventListener("click", (e) => {
+    var mobileMenu = document.querySelector("ul.header__menu");
+    var menu = document.querySelector("div.header__menu");
     if (document.body.clientWidth <= 767) {
-        var box = document.querySelector("ul.header__menu");
-        box.classList.toggle("header__menu_show");
+        mobileMenu.classList.toggle("header__menu_show");
     } else {
-        var box = document.querySelector("div.header__menu");
-        box.classList.toggle("header__menu_show");
+        menu.classList.toggle("header__menu_show");
     }
 });
 //для частных лиц (на планшеты)
 document.querySelector("#for-person-tablet").addEventListener("click", (e) => {
-    var box1 = document.querySelector(".header__for-person-block");
-    box1.classList.toggle("header__for-person-block_show");
+    var forPersonBlock = document.querySelector(".header__for-person-block");
+    forPersonBlock.classList.toggle("header__for-person-block_show");
     document.querySelector("#for-person-tablet-link").classList.toggle("header__for-person_active");
 
 })
@@ -37,3 +37,13 @@ document.querySelector("#header__about-bank_tablet").addEventListener("click", (
     box.classList.toggle("header__about-bank-list_show");
     document.querySelector(".header__about-bank-drop").classList.toggle("header__about-bank-drop_active");
 })
+//верхний блок о банке для десктопов
+document.querySelector("#header__about-bank-button_desktop").addEventListener("click", (e) => {
+    var aboutBankHeaderBlock = document.querySelector(".header__about-bank-block_desktop");
+    aboutBankHeaderBlock.classList.toggle("header__about-bank-block_display");
+});
+//закрыть верхний блок о банке для десктопов
+document.querySelector("#header__about-bank-button-close_desktop").addEventListener("click", (e) => {
+    var aboutBankHeaderBlock = document.querySelector(".header__about-bank-block_desktop");
+    aboutBankHeaderBlock.classList.remove("header__about-bank-block_display");
+});

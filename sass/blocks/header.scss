@@ -12,12 +12,42 @@
     align-items: center;
     justify-content: center;
 }
-//1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920
-@media screen and (max-width: 4100px) {
+
+//1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920_1920<=
     .header__mobile-menu {
         display: none;
     }
-
+    .header__about-bank-block_desktop {
+        display: none;
+        position: absolute;
+        background: $white;
+        margin-top: 1px;
+        width: 100%;
+        box-shadow: 0px 34px 48px -14px $gray-darken-2;
+        .header__about-bank-block-close_desktop{
+                display: flex;
+                justify-content: center;
+            margin-bottom: 20px;
+            }
+        ul {
+            list-style: none;
+            column-count: 3;
+            column-gap: 0px;
+            margin-left: 375px;
+            margin-right: 375px;
+            padding-top: 33px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 50px;
+            font-family: G-regular;
+            a{
+                color: $gray-darken-5;
+            }
+        }
+    }
+    .header__about-bank-block_display{
+        display: block;
+    }
     .header {
         display: flex;
         justify-content: space-between;
@@ -241,13 +271,44 @@
             }
         }
     }
-}
+
+
 //1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_1024_
 @media screen and (max-width: 1919px) {
     .header__mobile-menu {
         display: none;
     }
-
+    .header__about-bank-block_desktop {
+        display: none;
+        position: absolute;
+        background: $white;
+        margin-top: 1px;
+        width: 100%;
+        box-shadow: 0px 34px 48px -14px $gray-darken-2; 
+        .header__about-bank-block-close_desktop{
+                display: flex;
+                justify-content: center;
+            margin-bottom: 20px;
+            }
+        ul {
+            list-style: none;
+            column-count: 3;
+            column-gap: 0px;
+            margin-left: 65px;
+            margin-right: 65px;
+            padding-top: 33px;
+            padding-bottom: 20px;
+            font-size: 18px;
+            line-height: 50px;
+            font-family: G-regular;
+            a{
+                color: $gray-darken-5;
+            }
+        }
+    }
+    .header__about-bank-block_display{
+        display: block;
+    }
     .header {
         display: flex;
         justify-content: space-between;
@@ -375,10 +436,12 @@
                 margin-bottom: 23px;
             }
         }
-        .header__main-header-menu-items{
+
+        .header__main-header-menu-items {
             display: flex;
         }
-        .header__desktop-search{
+
+        .header__desktop-search {
             padding-right: 65px;
             display: flex;
             align-items: center;
@@ -397,11 +460,13 @@
         padding-right: 0px;
         margin-right: 0px;
         padding-top: 0px;
+
         li.header__for-person-list-item {
             display: flex;
             line-height: 30px;
             padding-top: 10px;
             padding-bottom: 0px;
+
             a {
                 color: $gray-darken-5;
                 font-size: 18px;
@@ -423,6 +488,7 @@
             display: block;
             margin-bottom: 35px;
             margin-right: 35px;
+
             .header__top-img {
                 height: 140px;
                 width: 279px;
@@ -542,7 +608,9 @@
     .header__mobile-menu {
         display: none;
     }
-
+    .header__about-bank-block_desktop{
+        display: none;
+    }
     .header__banking_desktop {
         display: none;
     }
@@ -642,7 +710,10 @@
                 margin-bottom: 30px;
                 margin-right: 35px;
             }
-            .header__desktop-search{display: none;}
+
+            .header__desktop-search {
+                display: none;
+            }
         }
     }
 
@@ -670,9 +741,11 @@
         padding-left: 90px;
         padding-right: 90px;
         margin-bottom: 10px;
+
         li.header__for-person-list-item {
             display: block;
             padding-top: 8px;
+
             a {
                 color: $gray-darken-5;
             }
@@ -691,6 +764,7 @@
         .header__signIn-container {
             display: flex;
             justify-content: center;
+
             .header__top-img {
                 height: 140px;
                 width: 279px;
@@ -806,6 +880,7 @@
 
             .private {
                 display: inline-block;
+
                 a {
                     color: $black;
                 }
@@ -813,6 +888,7 @@
 
             .tel {
                 display: inline-block;
+
                 a {
                     color: $orange;
                 }
@@ -832,6 +908,12 @@
 
 //320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320_320
 @media screen and (max-width: 767px) {
+    div.header__menu {
+        display: none;
+    }
+    .header__about-bank-block_desktop{
+        display: none;
+    }
     .header__mobile-menu {
         display: block;
     }
