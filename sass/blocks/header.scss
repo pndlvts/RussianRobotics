@@ -18,7 +18,9 @@
         display: none;
     }
     .header__about-bank-block_desktop {
-        display: none;
+        z-index: 10;
+        transform: translateY(-1000px);
+        transition: 0.5s;
         position: absolute;
         background: $white;
         margin-top: 1px;
@@ -46,7 +48,8 @@
         }
     }
     .header__about-bank-block_display{
-        display: block;
+        transform: translateY(0);
+        transition: 0.5s;
     }
     .header {
         display: flex;
@@ -279,7 +282,9 @@
         display: none;
     }
     .header__about-bank-block_desktop {
-        display: none;
+        transform: translateY(-1000px);
+        transition: 0.5s;
+        z-index: 10;
         position: absolute;
         background: $white;
         margin-top: 1px;
@@ -307,7 +312,8 @@
         }
     }
     .header__about-bank-block_display{
-        display: block;
+        transform: translateY(0);
+        transition: 0.5s;
     }
     .header {
         display: flex;
