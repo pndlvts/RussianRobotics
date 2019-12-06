@@ -31,6 +31,22 @@ document.querySelector("#for-corp").addEventListener("click", (e) => {
     })
     document.querySelector("#for-corp-dropdown").classList.toggle("header__for-corp_active");
 })
+//для услуг на рынке ценных бумаг (на телефоны)
+document.querySelector("#for-services").addEventListener("click", (e) => {
+    var box = document.querySelectorAll(".header__for-services-list-item");
+    box.forEach(box => {
+        box.classList.toggle("header__for-services-list-item_show");
+    })
+    document.querySelector("#for-services-dropdown").classList.toggle("header__for-services_active");
+})
+//о банке (на телефоны)
+document.querySelector("#for-about-bank-mobile").addEventListener("click", (e) => {
+    var box = document.querySelectorAll(".header__for-about-bank-mobile-list-item");
+    box.forEach(box => {
+        box.classList.toggle("header__for-about-bank-mobile-list-item_show");
+    })
+    document.querySelector("#for-about-bank-mobile-dropdown").classList.toggle("header__for-about-bank-mobile_active");
+})
 //о банке (на планшеты)
 document.querySelector("#header__about-bank_tablet").addEventListener("click", (e) => {
     var box = document.querySelector("ul.header__about-bank-list");
