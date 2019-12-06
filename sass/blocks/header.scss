@@ -17,7 +17,10 @@
 .header__mobile-menu {
     display: none;
 }
-
+#services-gap{
+    column-gap: 100px;
+    margin-right: 90px;
+}
 .header__about-bank-block_desktop {
     z-index: 10;
     transform: translateY(-1000px);
@@ -152,7 +155,6 @@
 
     .header__inline {
         display: flex;
-
     }
 
     ul.header__main-header-menu {
@@ -228,10 +230,17 @@ ul.header__for-person-list {
     display: none;
     background: $white;
 }
+.header__for-services-block{
+    display: none;
+    background: $white;
+}
 .header__for-person-block_show {
     display: block;
 }
 .header__for-corp-block_show{
+    display: block;
+}
+.header__for-services-block_show{
     display: block;
 }
     .header__about-bank-container {
@@ -271,6 +280,19 @@ ul.header__for-person-list {
                 height: 180px;
             }
         }
+        .header__top-img-services {
+            height: 140px;
+            width: 279px;
+            background-color: #e6e4cf;
+            margin-top: 55px;
+            margin-right: 375px;
+
+            img {
+                margin-top: -40px;
+                margin-left: 60px;
+                height: 180px;
+            }
+        }
 
         .header__signIn {
             margin-top: 15px;
@@ -289,6 +311,16 @@ ul.header__for-person-list {
             font-size: 14px;
             max-width: 279px;
 
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+            .header__signIn-services {
+            margin-top: 15px;
+            font-family: G-medium;
+            font-size: 14px;
+            max-width: 279px;
             .header__signIn-text {
                 line-height: 25px;
                 margin-bottom: 15px;
@@ -455,7 +487,6 @@ ul.header__for-person-list {
 
         .header__inline {
             display: flex;
-
         }
 
         ul.header__main-header-menu {
@@ -633,6 +664,19 @@ ul.header__for-person-list {
                 height: 180px;
             }
         }
+        .header__top-img-services {
+            height: 140px;
+            width: 279px;
+            background-color: #e6e4cf;
+            margin-top: 55px;
+            margin-right: 65px;
+
+            img {
+                margin-top: -40px;
+                margin-left: 60px;
+                height: 180px;
+            }
+        }
             .header__signIn {
                 margin-top: 12px;
                 font-family: G-medium;
@@ -645,6 +689,17 @@ ul.header__for-person-list {
                 }
             }
         .header__signIn-corp {
+            margin-top: 15px;
+            font-family: G-medium;
+            font-size: 14px;
+            max-width: 279px;
+
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        .header__signIn-services {
             margin-top: 15px;
             font-family: G-medium;
             font-size: 14px;
@@ -947,6 +1002,18 @@ ul.header__for-person-list {
                 margin-bottom: 15px;
             }
         }
+        .header__signIn-services {
+            min-width: 270px;
+            margin-top: 125px;
+            font-family: G-medium;
+            font-size: 18px;
+            max-width: 279px;
+
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
         }
     .header__contacts {
             margin-top: 266px;
@@ -984,6 +1051,9 @@ ul.header__for-person-list {
     color: $deep-blue !important;
 }
 .header__for-corp_active {
+    color: $deep-blue !important;
+}
+.header__for-services_active {
     color: $deep-blue !important;
 }
 

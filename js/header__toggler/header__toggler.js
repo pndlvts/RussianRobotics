@@ -16,6 +16,9 @@ document.querySelector("#for-person-tablet").addEventListener("click", (e) => {
     var forCorpBlock = document.querySelector(".header__for-corp-block");
     forCorpBlock.classList.remove("header__for-corp-block_show");
     document.querySelector("#for-corp-tablet-link").classList.remove("header__for-corp_active");
+    var forPersonBlock = document.querySelector(".header__for-services-block");
+    forPersonBlock.classList.remove("header__for-services-block_show");
+    document.querySelector("#for-services-tablet-link").classList.remove("header__for-services_active");
 })
 //для частных лиц (на телефоны)
 document.querySelector("#for-person").addEventListener("click", (e) => {
@@ -76,4 +79,20 @@ document.querySelector("#for-corp-tablet").addEventListener("click", (e) => {
     var forPersonBlock = document.querySelector(".header__for-person-block");
     forPersonBlock.classList.remove("header__for-person-block_show");
     document.querySelector("#for-person-tablet-link").classList.remove("header__for-person_active");
+    var forPersonBlock = document.querySelector(".header__for-services-block");
+    forPersonBlock.classList.remove("header__for-services-block_show");
+    document.querySelector("#for-services-tablet-link").classList.remove("header__for-services_active");
 })
+//для услуг (на планшеты)
+document.querySelector("#for-services-tablet").addEventListener("click", (e) => {
+    var forCorpBlock = document.querySelector(".header__for-services-block");
+    forCorpBlock.classList.toggle("header__for-services-block_show");
+    document.querySelector("#for-services-tablet-link").classList.toggle("header__for-services_active");
+    var forPersonBlock = document.querySelector(".header__for-person-block");
+    forPersonBlock.classList.remove("header__for-person-block_show");
+    document.querySelector("#for-person-tablet-link").classList.remove("header__for-person_active");
+    var forCorpBlock = document.querySelector(".header__for-corp-block");
+    forCorpBlock.classList.remove("header__for-corp-block_show");
+    document.querySelector("#for-corp-tablet-link").classList.remove("header__for-corp_active");
+})
+
