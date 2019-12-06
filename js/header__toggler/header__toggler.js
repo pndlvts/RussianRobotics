@@ -13,7 +13,9 @@ document.querySelector("#for-person-tablet").addEventListener("click", (e) => {
     var forPersonBlock = document.querySelector(".header__for-person-block");
     forPersonBlock.classList.toggle("header__for-person-block_show");
     document.querySelector("#for-person-tablet-link").classList.toggle("header__for-person_active");
-
+    var forCorpBlock = document.querySelector(".header__for-corp-block");
+    forCorpBlock.classList.remove("header__for-corp-block_show");
+    document.querySelector("#for-corp-tablet-link").classList.remove("header__for-corp_active");
 })
 //для частных лиц (на телефоны)
 document.querySelector("#for-person").addEventListener("click", (e) => {
@@ -49,9 +51,11 @@ document.querySelector("#for-about-bank-mobile").addEventListener("click", (e) =
 })
 //о банке (на планшеты)
 document.querySelector("#header__about-bank_tablet").addEventListener("click", (e) => {
+    if (document.body.clientWidth < 1024){
     var box = document.querySelector("ul.header__about-bank-list");
     box.classList.toggle("header__about-bank-list_show");
     document.querySelector(".header__about-bank-drop").classList.toggle("header__about-bank-drop_active");
+    }
 })
 //верхний блок о банке для десктопов
 document.querySelector("#header__about-bank-button_desktop").addEventListener("click", (e) => {
@@ -63,3 +67,13 @@ document.querySelector("#header__about-bank-button-close_desktop").addEventListe
     var aboutBankHeaderBlock = document.querySelector(".header__about-bank-block_desktop");
     aboutBankHeaderBlock.classList.remove("header__about-bank-block_display");
 });
+//
+//для юр лиц (на планшеты)
+document.querySelector("#for-corp-tablet").addEventListener("click", (e) => {
+    var forCorpBlock = document.querySelector(".header__for-corp-block");
+    forCorpBlock.classList.toggle("header__for-corp-block_show");
+    document.querySelector("#for-corp-tablet-link").classList.toggle("header__for-corp_active");
+    var forPersonBlock = document.querySelector(".header__for-person-block");
+    forPersonBlock.classList.remove("header__for-person-block_show");
+    document.querySelector("#for-person-tablet-link").classList.remove("header__for-person_active");
+})

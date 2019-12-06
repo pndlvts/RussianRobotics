@@ -150,10 +150,6 @@
 .header__menu {
     display: block;
 
-    .header__for-person-block_show {
-        display: block;
-    }
-
     .header__inline {
         display: flex;
 
@@ -205,7 +201,7 @@ ul.header__for-person-list {
     -webkit-column-count: 2;
     column-count: 2;
     padding-right: 70px;
-
+    margin-bottom: 75px;
     li.header__for-person-list-item {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -227,8 +223,24 @@ ul.header__for-person-list {
 .header__for-person-block {
     display: none;
     background: $white;
+}
+.header__for-corp-block{
+    display: none;
+    background: $white;
+}
+.header__for-person-block_show {
+    display: block;
+}
+.header__for-corp-block_show{
+    display: block;
+}
+    .header__about-bank-container {
+        margin-top: 30px;
+        display: none;
 
-    .header__signIn-container {
+
+    }
+        .header__signIn-container {
         display: block;
         margin-bottom: 35px;
         margin-left: 35px;
@@ -243,7 +255,20 @@ ul.header__for-person-list {
             img {
                 margin-top: -40px;
                 margin-left: 5px;
-                min-height: 180px;
+                height: 180px;
+            }
+        }
+        .header__top-img-corp {
+            height: 140px;
+            width: 279px;
+            background-color: #CFE6E5;
+            margin-top: 55px;
+            margin-right: 375px;
+
+            img {
+                margin-top: -40px;
+                margin-left: 5px;
+                height: 180px;
             }
         }
 
@@ -258,15 +283,18 @@ ul.header__for-person-list {
                 margin-bottom: 15px;
             }
         }
+            .header__signIn-corp {
+            margin-top: 15px;
+            font-family: G-medium;
+            font-size: 14px;
+            max-width: 279px;
+
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
     }
-
-    .header__about-bank-container {
-        margin-top: 30px;
-        display: none;
-
-
-    }
-
     .header__contacts {
         margin-top: 1px;
         min-height: 1px;
@@ -278,7 +306,7 @@ ul.header__for-person-list {
         .tel {
             display: none
         }
-    }
+
 }
 
 
@@ -501,39 +529,7 @@ ul.header__for-person-list {
     .header__for-person-block {
         display: none;
         background: $white;
-
-        .header__signIn-container {
-            display: block;
-            margin-bottom: 35px;
-            margin-right: 35px;
-
-            .header__top-img {
-                height: 140px;
-                width: 279px;
-                background-color: #CEDEEC;
-                margin-top: 45px;
-                margin-right: 30px;
-
-                img {
-                    margin-top: -40px;
-                    margin-left: 5px;
-                    min-height: 180px;
-                }
-            }
-
-            .header__signIn {
-                margin-top: 12px;
-                font-family: G-medium;
-                font-size: 14px;
-                max-width: 279px;
-
-                .header__signIn-text {
-                    line-height: 25px;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-
+    
         .header__about-bank-container {
             margin-top: 30px;
             display: block;
@@ -605,8 +601,62 @@ ul.header__for-person-list {
                 }
             }
         }
+    }
+    .header__signIn-container {
+            display: block;
+            margin-bottom: 35px;
+            margin-right: 35px;
 
-        .header__contacts {
+            .header__top-img {
+                height: 140px;
+                width: 279px;
+                background-color: #CEDEEC;
+                margin-top: 45px;
+                margin-right: 30px;
+
+                img {
+                    margin-top: -40px;
+                    margin-left: 5px;
+                    height: 180px;
+                }
+            }
+            .header__top-img-corp {
+            height: 140px;
+            width: 279px;
+            background-color: #CFE6E5;
+            margin-top: 55px;
+            margin-right: 65px;
+
+            img {
+                margin-top: -40px;
+                margin-left: 5px;
+                height: 180px;
+            }
+        }
+            .header__signIn {
+                margin-top: 12px;
+                font-family: G-medium;
+                font-size: 14px;
+                max-width: 279px;
+
+                .header__signIn-text {
+                    line-height: 25px;
+                    margin-bottom: 15px;
+                }
+            }
+        .header__signIn-corp {
+            margin-top: 15px;
+            font-family: G-medium;
+            font-size: 14px;
+            max-width: 279px;
+
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        }
+    .header__contacts {
             margin-top: 1px;
             min-height: 1px;
 
@@ -618,7 +668,6 @@ ul.header__for-person-list {
                 display: none
             }
         }
-    }
 }
 
 //768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768_768
@@ -781,38 +830,6 @@ ul.header__for-person-list {
         display: none;
         background: $white;
 
-        .header__signIn-container {
-            display: flex;
-            justify-content: center;
-
-            .header__top-img {
-                height: 140px;
-                width: 279px;
-                background-color: #CEDEEC;
-                margin-top: 75px;
-                margin-left: 20px;
-
-                img {
-                    margin-top: -40px;
-                    margin-left: 5px;
-                    min-height: 180px;
-                }
-            }
-
-            .header__signIn {
-                margin-top: 80px;
-                font-family: G-medium;
-                font-size: 18px;
-                margin-right: 18px;
-
-                .header__signIn-text {
-                    width: 55%;
-                    line-height: 25px;
-                    margin-bottom: 15px;
-                }
-            }
-        }
-
         .header__about-bank-container {
             margin-top: 0px;
             display: block;
@@ -888,7 +905,50 @@ ul.header__for-person-list {
             }
         }
 
-        .header__contacts {
+    }
+    .header__signIn-container {
+            display: flex;
+            justify-content: center;
+
+            .header__top-img {
+                height: 140px;
+                width: 279px;
+                background-color: #CEDEEC;
+                margin-top: 75px;
+                margin-left: 20px;
+
+                img {
+                    margin-top: -40px;
+                    margin-left: 5px;
+                    height: 180px;
+                }
+            }
+
+            .header__signIn {
+                margin-top: 80px;
+                font-family: G-medium;
+                font-size: 18px;
+                margin-right: 18px;
+
+                .header__signIn-text {
+                    width: 55%;
+                    line-height: 25px;
+                    margin-bottom: 15px;
+                }
+            }
+        .header__signIn-corp {
+            margin-top: 50px;
+            font-family: G-medium;
+            font-size: 18px;
+            max-width: 279px;
+
+            .header__signIn-text {
+                line-height: 25px;
+                margin-bottom: 15px;
+            }
+        }
+        }
+    .header__contacts {
             margin-top: 266px;
             margin-left: 90px;
             margin-right: 90px;
@@ -914,7 +974,6 @@ ul.header__for-person-list {
                 }
             }
         }
-    }
 }
 
 .header__for-person-block_show {
@@ -922,6 +981,9 @@ ul.header__for-person-list {
 }
 
 .header__for-person_active {
+    color: $deep-blue !important;
+}
+.header__for-corp_active {
     color: $deep-blue !important;
 }
 
@@ -1072,7 +1134,7 @@ ul.header__for-person-list {
 
                 img {
                     margin-top: -30px;
-                    min-height: 180px;
+                    height: 180px;
                 }
             }
 
