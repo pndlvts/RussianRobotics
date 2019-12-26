@@ -1,5 +1,6 @@
 .btn {
     height: 70px;
+    font-family: G-regular;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -10,6 +11,10 @@
     background: $deep-blue;
     outline: none;
     text-align: center;
+    a, a:visited, a:active, a:hover{
+        text-decoration: none;
+        color: #fff;
+    }
 }
 @media screen and (max-width: 767px) {
     .btn {
