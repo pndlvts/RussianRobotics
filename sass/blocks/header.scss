@@ -241,14 +241,26 @@ ul.header__for-person-list {
 }
 
 .header__for-person-block_show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: block;
 }
 
 .header__for-corp-block_show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: block;
 }
 
 .header__for-services-block_show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: block;
 }
 
