@@ -21,7 +21,7 @@ $('.owl-carousel-2').owlCarousel({
     dotsContainer: '.customDots',
     autoplay: false,
     responsive: {
-        769: {
+        1024: {
             items: 2,
             dots: false,
         },
