@@ -16,6 +16,6 @@ gulp.task("pug", function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch('sass/**/*.scss', gulp.series('sass'));
-  gulp.watch('pug/**/*.pug', gulp.series('pug'));
+  gulp.watch('sass/*.scss', gulp.series('sass'));
+  gulp.watch('pug/*.pug', gulp.series('pug'));
 });
