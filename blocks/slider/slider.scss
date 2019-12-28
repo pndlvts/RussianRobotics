@@ -62,13 +62,14 @@
     position: absolute;
     display: inline-block;
     width: 422px;
-    height: 589px;
+    height: auto;
     margin-left: 71px;
+    right: 688px;
     bottom: 0;
 
     img {
         width: 422px;
-        height: 589px;
+        height: auto;
     }
 }
 
@@ -76,13 +77,13 @@
 @media screen and (max-width: 1919px) {
     .owl-carousel-1 {
         .item {
-            padding-left: 60px;
+            padding-left: 65px;
         }
     }
 
     .owl-dots {
         margin-top: -180px;
-        margin-left: 61px;
+        margin-left: 65px;
     }
 
     .slider__content {
@@ -114,15 +115,15 @@
     .slider__image {
         position: absolute;
         display: inline-block;
-        width: 422px;
-        height: 589px;
+        width: 389px;
+        height: 529px;
         margin-left: 27px;
-        right: 75px;
+        right: 140px;
         bottom: 0;
 
         img {
-            width: 422px;
-            height: 589px;
+            width: 389px;
+            height: 529px;
         }
     }
 }
