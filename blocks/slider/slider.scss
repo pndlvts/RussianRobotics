@@ -9,7 +9,7 @@
 }
 
 .owl-dots {
-    margin-top: -190px;
+    margin-top: -115px;
     margin-left: 370px;
     height: 10px;
     z-index: 100;
@@ -44,7 +44,7 @@
     font-size: 70px;
     line-height: 80px;
     color: #000;
-    padding-top: 103px;
+    padding-top: 100px;
 }
 
 .slider__text {
@@ -82,7 +82,7 @@
     }
 
     .owl-dots {
-        margin-top: -180px;
+        margin-top: -165px;
         margin-left: 65px;
     }
 
@@ -99,6 +99,7 @@
         width: 475px;
         font-size: 45px;
         line-height: 50px;
+        padding-top: 113px;
     }
 
     .slider__text {
@@ -116,14 +117,14 @@
         position: absolute;
         display: inline-block;
         width: 389px;
-        height: 529px;
+        height: auto;
         margin-left: 27px;
         right: 140px;
         bottom: 0;
 
         img {
             width: 389px;
-            height: 529px;
+            height: auto;
         }
     }
 }
@@ -132,26 +133,28 @@
 @media screen and (max-width: 1023px) {
     .owl-carousel-1 {
         .item {
-            padding-left: 60px;
+            padding-left: 90px;
             height: 500px;
         }
     }
 
     .owl-dots {
-        margin-top: -60px;
-        margin-left: 61px;
+        margin-top: -65px;
+        margin-left: 90px;
     }
 
     .slider__content {
         display: inline-block;
 
         .btn {
+            margin-top: 90px;
             max-width: 250px;
         }
     }
 
     .slider__title {
         width: 475px;
+        padding-top: 55px;
     }
 
     .slider__text {
@@ -169,13 +172,13 @@
         position: absolute;
         display: inline-block;
         width: 316px;
-        height: 479px;
+        height: auto;
         margin-left: 0px;
-        right: 55px;
+        right: 65px;
 
         img {
             width: 316px;
-            height: 478px;
+            height: auto;
             bottom: 0;
         }
     }
@@ -191,7 +194,7 @@
     }
 
     .owl-dots {
-        margin-top: -40px;
+        margin-top: -45px;
         margin-left: 19px;
     }
 
@@ -229,14 +232,14 @@
         position: absolute;
         display: inline-block;
         width: 175px;
-        height: 263px;
+        height: auto;
         margin-left: 0px;
         right: -28px;
         bottom: 0;
 
         img {
             width: 175px;
-            height: 263px;
+            height: auto;
         }
     }
 }
