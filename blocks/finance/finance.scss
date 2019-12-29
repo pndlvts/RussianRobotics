@@ -1,5 +1,5 @@
 .finance {
-    margin-top: 50px;
+    margin-top: 55px;
 }
 
 .finance__info,
@@ -7,39 +7,238 @@
     display: flex;
     justify-content: center;
 }
+
 .finance__menu {
     margin-bottom: 20px;
 }
+
 .finance__rate-toggler,
 .finance__coins-toggler {
     width: 570px;
-    a, a:visited, a:active{
+
+    a,
+    a:visited,
+    a:active {
         color: $orange;
+        font-family: "G-medium"
     }
 }
-.finance__date{
+
+.finance__date {
     display: inline-block;
     color: $gray-darken-5;
     margin-left: 10px;
 }
+
 .finance__coins-toggler {
     margin-left: 30px;
 }
-.finance__rate-toggler::before{
+
+.finance__rate-toggler::before {
     font-family: "iconsRR";
     content: "\e904";
     margin-right: 10px;
     color: $orange;
 }
-.finance__coins-toggler::before{
+
+.finance__coins-toggler::before {
     font-family: "iconsRR";
     content: "\e905";
     margin-right: 10px;
     color: $orange;
 }
+
+.info-block__container-table {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.info-block__table {
+    width: 100%;
+    margin-top: 55px;
+    border: none;
+    border-spacing: 0 0;
+
+    td {
+        border: none;
+    }
+}
+
+td.info-block__table-header {
+    padding-bottom: 5px;
+    font-family: "G-regular";
+    color: $gray-darken-5;
+    font-size: 12px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid $gray-darken-2;
+}
+
+.info-block__table-header-val::after {
+    content: "Валюта"
+}
+
+.info-block__table-header-time::after {
+    content: "Период"
+}
+
+.info-block__table-header-purchase::after {
+    content: "Покупка"
+}
+
+.info-block__table-header-selling::after {
+    content: "Продажа"
+}
+
+.info-block__table-header-cb::after {
+    content: "Цб"
+}
+
+.info-block__table-header-coin::after {
+    content: "Вид"
+}
+
+.info-block__table-header-value:after {
+    content: "Номинал"
+}
+
+.info-block__table-first-row {
+    td {
+        padding-top: 45px;
+    }
+}
+
+.info-block__table-row {
+    td {
+        padding-top: 20px;
+    }
+}
+
+.info-block__table-currency {
+    text-transform: uppercase;
+    font-family: "G-medium";
+    color: $gray-darken-5;
+}
+
+.info-block__table-purchase,
+.info-block__table-selling,
+.info-block__table-cb,
+.info-block__table-value {
+    font-family: "G-medium";
+    color: #000;
+    font-size: 18px;
+    line-height: 18px;
+    position: relative;
+}
+
+.info-block__table-first-row_mt-30px {
+    td {
+        padding-top: 30px;
+    }
+}
+
+.info-block__table-row_mt-15px {
+    td {
+        padding-top: 0;
+    }
+}
+
+info-block__table-row_mt-40px {
+    td {
+        padding-top: 40px;
+    }
+}
+
+.info-block__table-purchase_up::after,
+.info-block__table-selling_up::after,
+.info-block__table-cb_up::after {
+    font-family: "iconsRR";
+    color: $deep-blue;
+    font-size: 13px;
+    content: "\e92e";
+    margin-left: 10px;
+}
+
+.info-block__table-purchase_down::after,
+.info-block__table-selling_down::after,
+.info-block__table-cb_down::after {
+    font-family: "iconsRR";
+    color: $orange;
+    font-size: 13px;
+    content: "\e930";
+    margin-left: 10px;
+}
+
+.info-block__table-time {
+    img {
+        width: 50px;
+        height: auto;
+    }
+}
+
+.info-block__table-coin {
+    padding-right: 15px;
+    img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+.info-block__table-coin-name {
+    font-family: "G-medium";
+    font-size: 18px;
+    color: $gray-darken-5;
+}
+
+@media screen and (max-width: 1919px) {
+    .finance {
+    margin-top: 55px;
+}
+    .info-block__table-first-row_mt-30px {
+    td {
+        padding-top: 30px;
+    }
+}
+
+.info-block__table-row_mt-15px {
+    td {
+        padding-top: 15px;
+    }
+}
+
+info-block__table-row_mt-40px {
+    td {
+        padding-top: 40px;
+    }
+}
+    .info-block__table-time,
+    .info-block__table-header-time {
+        display: none
+    }
+    .info-block__table-row {
+    td {
+        padding-top: 40px;
+    }
+}
+    .finance__rate-toggler,
+    .finance__coins-toggler {
+        font-size: 18px;
+    }
+    .info-block__table-coin {
+    img {
+        width: 68px;
+        height: auto;
+    }
+
+    padding-right: 25px;
+}
+}
+//768768768768
 @media screen and (max-width: 1023px) {
     .finance {
         display: block;
+        margin-top: 80px;
     }
 
     .finance__menu {
@@ -54,12 +253,100 @@
     .finance__coins-toggler {
         margin-left: 0;
     }
+
+    .finance__coins-toggler::before {
+        font-family: "iconsRR";
+        content: "";
+        margin-right: 10px;
+        color: $orange;
+    }
+
+    .info-block__table-time,
+    .info-block__table-header-time {
+        display: table-cell;
+    }
+    .info-block__table-row {
+    td {
+        padding-top: 20px;
+    }
 }
-@media screen and (max-width: 1023px) {
-.finance__coins-toggler::before{
-    font-family: "iconsRR";
-    content: "";
-    margin-right: 10px;
-    color: $orange;
+}
+//320320320320320320320320320
+@media screen and (max-width: 767px) {
+    .finance {
+        margin-top: 40px;
+    }
+
+    .info-block__container-table {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .info-block__table-header-val::after {
+        content: "Вал."
+    }
+
+    .info-block__table-header-purchase::after {
+        content: "Пок."
+    }
+
+    .info-block__table-header-selling::after {
+        content: "Прод."
+    }
+
+    .info-block__table-time,
+    .info-block__table-header-time {
+        display: none
+    }
+
+    .info-block__table-purchase_up::after,
+    .info-block__table-selling_up::after,
+    .info-block__table-cb_up::after {
+        content: "";
+    }
+
+    .info-block__table-purchase_down::after,
+    .info-block__table-selling_down::after,
+    .info-block__table-cb_down::after {
+        content: "";
+    }
+
+    .info-block__table-purchase_up,
+    .info-block__table-selling_up,
+    .info-block__table-cb_up {
+        color: $deep-blue;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .info-block__table-purchase_down,
+    .info-block__table-selling_down,
+    .info-block__table-cb_down {
+        color: $orange;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .finance__rate-toggler,
+    .finance__coins-toggler {
+        font-size: 14px;
+    }
+
+    td.info-block__table-header {
+        font-size: 9px;
+    }
+
+    .info-block__table-first-row {
+        td {
+            padding-top: 17px;
+        }
+    }
+    .info-block__table {
+            margin-top: 23px;
+        }
+    .info-block__table-row {
+    td {
+        padding-top: 9px;
+    }
 }
 }
