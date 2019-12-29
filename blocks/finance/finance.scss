@@ -254,13 +254,6 @@ info-block__table-row_mt-40px {
         margin-left: 0;
     }
 
-    .finance__coins-toggler::before {
-        font-family: "iconsRR";
-        content: "";
-        margin-right: 10px;
-        color: $orange;
-    }
-
     .info-block__table-time,
     .info-block__table-header-time {
         display: table-cell;
@@ -349,4 +342,7 @@ info-block__table-row_mt-40px {
         padding-top: 9px;
     }
 }
+    .finance__coins-toggler::before {
+        content: "";
+    }
 }
