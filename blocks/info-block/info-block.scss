@@ -233,7 +233,7 @@
         }
     }
 
-    .info-block_rate {
+    .info-block_rate, .info-block_coins {
         height: 230px;
     }
 
@@ -244,5 +244,8 @@
         .info-block__table-selling {
             font-size: 10px
         }
+    }
+    .info-block__table-coin-name{
+        font-size: 12px !important;
     }
 }
