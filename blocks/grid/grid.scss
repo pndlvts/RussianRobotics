@@ -1,0 +1,95 @@
+.grid {
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas:
+        "transfer transfer transfer"
+        "money-market money-market money-protection"
+        "remote-card card-mastercard card-mastercard"
+}
+
+.grid__transfer {
+    grid-area: transfer;
+    height: 275px;
+    width: 100%;
+    background: $gray-lighten;
+    margin-bottom: 75px;
+}
+
+.grid__money-market {
+    grid-area: money-market;
+    height: 380px;
+    background: $gray-lighten;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.grid__money-protection {
+    grid-area: money-protection;
+    height: 380px;
+    background: $gray-lighten;
+    margin-bottom: 30px;
+}
+
+.grid__remote-card {
+    grid-area: remote-card;
+    height: 380px;
+    background: $gray-lighten;
+    margin-right: 30px;
+}
+
+.grid__card-mastercard {
+    grid-area: card-mastercard;
+    height: 380px;
+    background: $gray-lighten;
+}
+
+@media screen and (max-width: 1919px) {
+    .grid {
+        margin-top: 70px;
+        display: grid;
+        grid-template-areas:
+            "transfer transfer"
+            "money-market money-market"
+            "money-protection remote-card"
+            "card-mastercard card-mastercard"
+    }
+
+    .grid__transfer {
+        margin-bottom: 80px;
+    }
+    .grid__money-market {
+        margin-right: 0;
+    }
+    .grid__money-protection{
+        margin-right: 30px;
+    }
+    .grid__remote-card{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .grid {
+        margin-top: 50px;
+        display: grid;
+        grid-template-areas:
+            "transfer transfer"
+            "money-market money-protection"
+            "remote-card card-mastercard"
+    }
+
+    .grid__transfer {
+        margin-bottom: 50px;
+    }
+    .grid__money-market {
+        margin-right: 30px;
+    }
+    .grid__money-protection{
+        margin-right: 0;
+    }
+    .grid__remote-card{
+        margin-right: 30px;
+    }
+    .grid__card-mastercard{
+        margin-right: 0;
+    }
+}
