@@ -12,6 +12,49 @@
     width: 100%;
     background: $gray-lighten;
     margin-bottom: 75px;
+    position: relative;
+
+    h6 {
+        font-family: G-bold;
+        font-size: 25px;
+        width: 545px;
+        padding-top: 60px;
+        margin-left: 40px;
+    }
+
+
+    p {
+        width: 425px;
+        font-family: G-regular;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-left: 40px;
+    }
+
+    .deep-blue {
+        color: $deep-blue;
+    }
+
+    .btn {
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    img {
+        width: auto;
+        height: 275px;
+    }
+
+    .transfer__image_1920 {
+        position: absolute;
+        right: 30px;
+        top: 0
+    }
+
+    .transfer__image {
+        display: none;
+    }
 }
 
 .grid__money-market {
@@ -54,6 +97,39 @@
     .transfer {
         margin-top: 70px;
         margin-bottom: 80px;
+        overflow: hidden;
+
+        h6 {
+            width: 416px;
+            padding-top: 50px;
+            margin-left: 30px;
+        }
+
+
+        p {
+            width: 325px;
+            font-size: 14px;
+            margin-left: 30px;
+        }
+
+        .deep-blue {
+            color: $deep-blue;
+        }
+
+        .btn {
+            width: 250px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        img {
+            width: auto;
+            height: 275px;
+        }
+
+        .transfer__image_1920 {
+            right: -60px;
+        }
     }
 
     .grid__money-market {
@@ -80,6 +156,46 @@
     .transfer {
         margin-top: 50px;
         margin-bottom: 50px;
+
+        h6 {
+            width: 275px;
+            padding-top: 35px;
+            margin-left: 30px;
+        }
+
+
+        p {
+            width: 325px;
+            font-size: 14px;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .deep-blue {
+            color: $deep-blue;
+        }
+
+        .btn {
+            width: 230px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        img {
+            width: 350px;
+            height: auto;
+        }
+
+        .transfer__image {
+            position: absolute;
+            right: -20px;
+            top: -50px;
+            display: block;
+        }
+
+        .transfer__image_1920 {
+            display: none;
+        }
     }
 
     .grid__money-market {
@@ -105,6 +221,50 @@
         height: 380px;
         margin-top: 30px;
         margin-bottom: 30px;
+        h6 {
+            width: 230px;
+            padding-top: 55px;
+            margin-left: 15px;
+            z-index: 2;
+            position: relative
+        }
+
+
+        p {
+            width: 247px;
+            font-size: 14px;
+            margin-left: 15px;
+            margin-top: 10px;
+            z-index: 2;
+            position: relative
+        }
+
+        .deep-blue {
+            color: $deep-blue;
+        }
+
+        .btn {
+            width: 155px;
+            margin-top: 135px;
+            margin-left: 15px;
+            font-size: 12px;
+            z-index: 2;
+            position: relative
+        }
+
+        img {
+            width: 260px;
+            height: auto;
+            z-index: 1;
+        }
+
+        .transfer__image {
+            position: absolute;
+            right: 0px;
+            top: 95px;
+            display: block;
+            z-index: 1;
+        }
     }
 
     .grid__money-market {
