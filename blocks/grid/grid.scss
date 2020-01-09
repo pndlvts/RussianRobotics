@@ -1,8 +1,16 @@
 .grid {
     display: grid;
+    grid-column-gap: 30px;
     grid-template-areas:
         "money-market money-market money-protection"
-        "remote-card card-mastercard card-mastercard"
+        "remote-card card-mastercard card-mastercard";
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 .transfer {
@@ -13,23 +21,6 @@
     background: $gray-lighten;
     margin-bottom: 75px;
     position: relative;
-
-    h6 {
-        font-family: G-bold;
-        font-size: 25px;
-        width: 545px;
-        padding-top: 60px;
-        margin-left: 40px;
-    }
-
-
-    p {
-        width: 425px;
-        font-family: G-regular;
-        font-size: 14px;
-        margin-top: 15px;
-        margin-left: 40px;
-    }
 
     .deep-blue {
         color: $deep-blue;
@@ -62,7 +53,17 @@
     height: 380px;
     background: $gray-lighten;
     margin-bottom: 30px;
-    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    .grid__card-title,
+    .grid__card-text {
+        width: 250px;
+    }
+
+    img {
+        width: 437px;
+        height: auto;
+    }
 }
 
 .grid__money-protection {
@@ -70,24 +71,79 @@
     height: 380px;
     background: $gray-lighten;
     margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    .grid__card-title,
+    .grid__card-text {
+        width: 295px;
+    }
+
+    img {
+        width: 205px;
+        height: auto;
+    }
 }
 
 .grid__remote-card {
     grid-area: remote-card;
     height: 380px;
     background: $gray-lighten;
-    margin-right: 30px;
+    position: relative;
+    overflow: hidden;
+    .grid__card-title {
+        width: 270px;
+    }
+    .grid__card-text{
+        width: 230px;
+    }
+    img {
+        width: 150px;
+        height: auto;
+    }
 }
 
 .grid__card-mastercard {
     grid-area: card-mastercard;
     height: 380px;
     background: $gray-lighten;
+    position: relative;
+    overflow: hidden;
+    .grid__card-title {
+        width: 266px;
+    }
+
+    .grid__card-text {
+        width: 385px;
+    }
+
+    img {
+        width: 541px;
+        height: 300px;
+    }
+}
+
+.grid__card-title {
+    font-family: G-bold;
+    font-size: 25px;
+    width: 545px;
+    padding-top: 60px;
+    margin-left: 40px;
+}
+
+
+.grid__card-text {
+    width: 425px;
+    font-family: G-regular;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 40px;
+    color: $gray-darken-5;
 }
 
 @media screen and (max-width: 1919px) {
     .grid {
         display: grid;
+        grid-template-columns: 430px 430px;
         grid-template-areas:
             "money-market money-market"
             "money-protection remote-card"
@@ -98,23 +154,6 @@
         margin-top: 70px;
         margin-bottom: 80px;
         overflow: hidden;
-
-        h6 {
-            width: 416px;
-            padding-top: 50px;
-            margin-left: 30px;
-        }
-
-
-        p {
-            width: 325px;
-            font-size: 14px;
-            margin-left: 30px;
-        }
-
-        .deep-blue {
-            color: $deep-blue;
-        }
 
         .btn {
             width: 250px;
@@ -134,20 +173,65 @@
 
     .grid__money-market {
         margin-right: 0;
+
+        .grid__card-title {
+            width: 289px;
+        }
+
+        .grid__card-text {
+            width: 289px;
+        }
     }
 
     .grid__money-protection {
-        margin-right: 30px;
+        .grid__card-title {
+            width: 327px;
+        }
+
+        .grid__card-text {
+            width: 327px;
+        }
     }
 
     .grid__remote-card {
         margin-right: 0;
+
+        .grid__card-title {
+            width: 339px;
+        }
+
+        .grid__card-text {
+            width: 300px;
+        }
+
+        img {
+            width: 170px;
+            height: auto;
+        }
+    }
+    .grid__card-mastercard{
+        .grid__image {
+        bottom: -50px;
+    }
+    }
+    .grid__card-title {
+        width: 416px;
+        padding-top: 50px;
+        margin-left: 30px;
+    }
+
+
+    .grid__card-text {
+        width: 325px;
+        font-size: 14px;
+        margin-left: 30px;
     }
 }
 
 @media screen and (max-width: 1023px) {
     .grid {
         display: grid;
+        grid-template-columns: 279px 279px;
         grid-template-areas:
             "money-market money-protection"
             "remote-card card-mastercard"
@@ -157,22 +241,6 @@
         margin-top: 50px;
         margin-bottom: 50px;
         height: 330px;
-        h6 {
-            width: 225px;
-            padding-top: 45px;
-            margin-left: 30px;
-            font-size: 20px;
-            line-height: 25px;
-        }
-
-
-        p {
-            width: 240px;
-            font-size: 14px;
-            margin-left: 30px;
-            margin-top: 20px;
-            line-height: 20px;
-        }
 
         .deep-blue {
             color: $deep-blue;
@@ -202,19 +270,83 @@
     }
 
     .grid__money-market {
-        margin-right: 30px;
+        .grid__card-title {
+            width: 239px;
+        }
+
+        .grid__card-text {
+            width: 239px;
+        }
+
+        img {
+            width: 325px;
+            height: auto;
+        }
     }
 
     .grid__money-protection {
         margin-right: 0;
+
+        .grid__card-title {
+            width: 240px;
+        }
+
+        .grid__card-text {
+            width: 240px;
+        }
+        .grid__image{
+            bottom: -30px;
+        }
     }
 
     .grid__remote-card {
-        margin-right: 30px;
+        .grid__card-title {
+            width: 240px;
+        }
+
+        .grid__card-text {
+            width: 240px;
+        }
+        img {
+            width: 100px;
+            height: auto;
+        }
     }
 
     .grid__card-mastercard {
         margin-right: 0;
+
+        .grid__card-title {
+            width: 232px;
+        }
+
+        .grid__card-text {
+            width: 232px;
+        }
+        .grid__image{
+            bottom: 0;
+        }
+        img {
+            width: 250px;
+            height: auto;
+        }
+    }
+
+    .grid__card-title {
+        width: 225px;
+        padding-top: 45px;
+        margin-left: 30px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+
+    .grid__card-text {
+        width: 240px;
+        font-size: 14px;
+        margin-left: 30px;
+        margin-top: 20px;
+        line-height: 20px;
     }
 }
 
@@ -224,27 +356,6 @@
         height: 380px;
         margin-top: 30px;
         margin-bottom: 30px;
-
-        h6 {
-            width: 200px;
-            padding-top: 55px;
-            margin-left: 15px;
-            z-index: 2;
-            position: relative;
-            font-size: 18px;
-            line-height: 25px;
-        }
-
-
-        p {
-            width: 247px;
-            font-size: 14px;
-            margin-left: 15px;
-            margin-top: 10px;
-            z-index: 2;
-            position: relative;
-            line-height: 20px;
-        }
 
         .deep-blue {
             color: $deep-blue;
@@ -284,12 +395,20 @@
         margin: 0;
         height: 350px;
         width: 250px;
+        img{
+            width: 150px !important;
+            height: auto;
+        }
     }
 
     .grid__remote-card {
         margin: 0;
         height: 350px;
         width: 250px;
+        img{
+            width: 90px !important;
+            height: auto;
+        }
     }
 
     .grid__card-mastercard {
@@ -306,5 +425,26 @@
         .active {
             width: 250px !important;
         }
+    }
+
+    .grid__card-title {
+        width: 200px;
+        padding-top: 55px;
+        margin-left: 15px;
+        z-index: 2;
+        position: relative;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+
+    .grid__card-text {
+        width: 247px;
+        font-size: 14px;
+        margin-left: 15px;
+        margin-top: 10px;
+        z-index: 2;
+        position: relative;
+        line-height: 20px;
     }
 }
