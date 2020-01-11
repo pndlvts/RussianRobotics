@@ -1,0 +1,145 @@
+.news__header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: flex-end;
+}
+
+.news__title {
+    font-family: G-bold;
+    font-size: 35px;
+    height: 51px;
+    align-content: flex-end;
+    color: #000;
+}
+
+a.news__link,
+a.news__link:visited,
+a.news__link:hover,
+a.news__link:active {
+    font-family: G-medium;
+    font-size: 18px;
+    height: 30px;
+    color: $deep-blue;
+}
+
+.news__link::after {
+    font-family: "iconsRR";
+    content: "\e92d";
+    font-size: 12px;
+    margin-left: 25px;
+    transition: 0.5s;
+}
+
+.news__link:hover:after {
+    color: $orange;
+    transition: 0.5s;
+    font-size: 14px;
+}
+
+.news__content {
+    display: flex;
+    margin-top: 46px;
+    justify-content: space-between
+}
+
+.news__block {
+    width: 375px;
+}
+
+.news__date {
+    margin-bottom: 13px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $gray-darken-5;
+}
+
+a.news__text-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    transition: 0.5s;
+}
+
+a.news__text-title:hover {
+    color: $orange;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1919px) {
+    .news__header {
+        margin-top: 48px;
+    }
+
+    .news__block {
+        width: 279px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .news__header {
+        margin-top: 53px;
+    }
+
+    .news__content {
+        flex-flow: column;
+        margin-top: 0;
+    }
+
+    .news__block {
+        width: 420px;
+        margin-top: 40px;
+    }
+
+    .news__link::after {
+        content: "\e934";
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .news__header {
+        display: block;
+        margin-top: 45px;
+    }
+
+    .news__title {
+        font-family: G-bold;
+        font-size: 20px;
+        height: 17px;
+        align-content: flex-end;
+        color: #000;
+        margin-bottom: 18px;
+    }
+
+    .news__block {
+        width: 280px;
+    }
+
+    a.news__link,
+    a.news__link:visited,
+    a.news__link:hover,
+    a.news__link:active {
+        font-family: G-medium;
+        font-size: 14px;
+        height: 12px;
+        color: $deep-blue;
+    }
+
+    .news__block {
+        margin-top: 32px;
+    }
+
+    .news__date {
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 20px;
+        color: $gray-darken-5;
+    }
+
+    a.news__text-title {
+        font-size: 14px;
+        line-height: 20px;
+        color: #000;
+        transition: 0.5s;
+    }
+}

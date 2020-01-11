@@ -38,29 +38,38 @@ $orange: #FF5D39;
 body {
     font-family: G-regular;
 }
-a{text-decoration: none}
 
-.flex-container{
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: url(cursorhover.png), pointer;
+}
+
+.flex-container {
     display: flex;
     justify-content: center;
 }
-.main-container{
-     width: 1170px;
+
+.main-container {
+    width: 1170px;
 }
-@media screen and (max-width: 1919px){
-    .main-container{
+
+@media screen and (max-width: 1919px) {
+    .main-container {
         width: 890px;
     }
 }
-@media screen and (max-width: 1023px){
-    .main-container{
+
+@media screen and (max-width: 1023px) {
+    .main-container {
         width: 588px;
     }
 }
-@media screen and (max-width: 767px){
-    .main-container{
+
+@media screen and (max-width: 767px) {
+    .main-container {
         width: 280px;
     }
 }
-
-
