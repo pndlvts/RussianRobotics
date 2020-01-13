@@ -40,7 +40,8 @@ a.news__link:active {
 .news__content {
     display: flex;
     margin-top: 46px;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 145px;
 }
 
 .news__block {
@@ -74,6 +75,9 @@ a.news__text-title:hover {
     .news__block {
         width: 279px;
     }
+    .news__content {
+        margin-bottom: 149px;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -84,6 +88,7 @@ a.news__text-title:hover {
     .news__content {
         flex-flow: column;
         margin-top: 0;
+        margin-bottom: 93px;
     }
 
     .news__block {
