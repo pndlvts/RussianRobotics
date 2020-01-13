@@ -3,7 +3,9 @@
     padding-top: 73px;
     padding-bottom: 73px;
 }
-
+.footer_container{
+    position: relative;
+}
 ul.footer__list {
     list-style: none;
     display: inline-block;
@@ -21,7 +23,7 @@ ul.footer__list {
 .footer__list-item {
     font-family: G-regular;
     font-size: 14px;
-    margin-top: 30px;
+    margin-top: 10px;
 
     a,
     a:visited,
@@ -92,12 +94,16 @@ ul.footer__list {
     ul.footer__list:nth-child(4) {
         margin-top: 15px;
     }
-
+    .footer__list-item {
+        margin-top: 10px;
+    }
     .footer__dropdown-list-1,
     .footer__dropdown-list-2,
     .footer__dropdown-list-3,
     .footer__dropdown-list-4 {
-        display: none;
+        transform:scaleY(0);
+        transform-origin: top;
+        position: absolute;
     }
     li.footer__list-item-dropdown{
         font-size: 14px;
@@ -108,11 +114,14 @@ ul.footer__list {
         color: $gray-darken-5;
         font-size: 7px;
         position: absolute;
-        right: 18px;
-        transition: 0.5s
+        right: 0;
+        transition: 0.5s;
     }
     .footer__dropdown-list_show{
-        display: list-item;
+        position: relative;
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: 0.5s;
     }
     .after_active::after{
         transform: rotate(180deg);
