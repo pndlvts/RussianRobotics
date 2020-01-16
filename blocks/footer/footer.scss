@@ -108,6 +108,9 @@ ul.footer__list {
     li.footer__list-item-dropdown{
         font-size: 14px;
     }
+    li.footer__list-item-dropdown span{
+        width: 100%;
+    }
     li.footer__list-item-dropdown span::after{
         font-family: "iconsRR";
         content: "\e924";
