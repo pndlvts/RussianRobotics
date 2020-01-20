@@ -3,6 +3,7 @@ block vars
     - var pageTitle="Главная"
 block header
     include ../blocks/header/header.pug
+block content
     include ../blocks/slider/slider.pug 
     include ../blocks/servicesSlider/servicesSlider.pug 
     .flex-container
@@ -10,8 +11,7 @@ block header
             include ../blocks/finance/finance.pug 
             include ../blocks/grid/grid.pug
             include ../blocks/news/news.pug
+block footer
     .flex-container.footer
         .main-container.footer_container
             include ../blocks/footer/footer.pug
-block content
-block footer
